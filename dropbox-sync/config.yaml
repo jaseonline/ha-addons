@@ -1,45 +1,27 @@
+---
+name: Dropbox Sync
+version: 2.0
+slug: dropbox_sync
+description: Upload your Home Assistant backups to Dropbox.
+url: https://github.com/jaseonline/dropbox-sync
 arch:
 - aarch64
 - amd64
 - armhf
-- armv7
 - i386
-codenotary: dev@brenner.tech
-description: Use a Cloudflared tunnel (formerly Argo Tunnel) to remotely connect to
-  Home Assistant without opening any ports
+stdin: true
 hassio_api: true
-hassio_role: homeassistant
-image: ghcr.io/brenner-tobias/cloudflared/{arch}
-init: false
+hassio_role: manager
+boot: auto
 map:
-- ssl:rw
-- share:rw
-- config:rw
-name: Cloudflared
+- backup
+- share
 options:
-  additional_hosts: []
-  external_hostname: ''
-  tunnel_name: homeassistant
-  tunnel_token: ''
+  oauth_access_token: "<YOUR_ACCESS_TOKEN>"
+  output: ''
 schema:
-  additional_hosts:
-  - disableChunkedEncoding: bool?
-    hostname: str
-    service: str
-  catch_all_service: str?
-  custom_config: bool?
-  data_folder: list(config|share|ssl)?
-  external_hostname: str?
-  log_level: list(trace|debug|info|notice|warning|error|fatal)?
-  nginx_proxy_manager: bool?
-  quick_tunnel: bool?
-  reset_cloudflared_files: bool?
-  tunnel_name: str?
-  tunnel_token: str?
-  warp_enable: bool?
-  warp_reset: bool?
-  warp_routes:
-  - str?
-slug: cloudflared
-url: https://github.com/brenner-tobias/addon-cloudflared/
-version: 2.0.4
+  oauth_access_token: str
+  output: str
+  keep_last: int(0,)?
+  filetypes: str?
+image: ghcr.io/jaseonline/dropbox-sync/{arch}
