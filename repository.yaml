@@ -1,4 +1,4 @@
 ---
-name: Add-on pepository to sync Home Assistant back-ups to Dropbox
+name: Add-on repository to sync Home Assistant back-ups to Dropbox
 url: https://github.com/jaseonline/addon-dropbox-sync
 maintainer: Jason Titter <https://github.com/jaseonline/>
