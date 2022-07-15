@@ -3,7 +3,7 @@ name: Dropbox Sync
 version: 2.0
 slug: dropbox_sync
 description: Upload your Home Assistant backups to Dropbox.
-url: https://github.com/jaseonline/dropbox-sync
+url: https://github.com/jaseonline/addon-dropbox-sync
 arch:
 - aarch64
 - amd64
