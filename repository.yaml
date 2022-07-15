@@ -1,4 +1,4 @@
 ---
-name: Add-On Repository for Cloudflare
-url: https://github.com/brenner-tobias/ha-addons
-maintainer: Tobia Brenner <https://github.com/brenner-tobias/>
+name: Add-On Repository to sync back-ups to Dropbox
+url: https://github.com/jaseonline/addon-dropbox-sync
+maintainer: Jason Titter <https://github.com/jaseonline/>
