@@ -24,4 +24,4 @@ schema:
   output: str
   keep_last: int(0,)?
   filetypes: str?
-image: ghcr.io/jaseonline/dropbox-sync/{arch}
+image: dwelch2101/dropbox-sync/{arch}
