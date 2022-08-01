@@ -4,4 +4,4 @@ addons:
   cloudflared:
     repository: jaseonline/addon-dropbox-sync
     target: dropbox-sync
-    image: ghcr.io/jaseonline/dropbox-sync/{arch}
+    image: dwelch2101/dropbox-sync/{arch}
