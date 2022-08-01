@@ -1,4 +1,4 @@
-# JaseOnline's Home Assistant add-ons repository
+# Home Assistant add-ons repository
 
 ![Project Stage][project-stage-shield]
 ![Maintenance][maintenance-shield]
